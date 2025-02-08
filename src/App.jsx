@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "@/assets/react.svg";
 import viteLogo from "/vite.svg";
 import "@/App.css";
-
+import { Button, HStack,Box,Text } from "@chakra-ui/react";
 function App() {
   const [count, setCount] = useState([1, 2, 3]);
 
@@ -12,10 +12,15 @@ function App() {
         <a href="https://vite.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
+        <Box bg="primary" p={4} color="red">
+      <Text fontFamily="body">This is a custom theme component!</Text>
+    </Box>
 
-        <a href="https://react.dev " target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react " alt="React logso" />
-        </a>
+     <HStack>
+
+<Button color="primary">Click me</Button>
+<Button>Click me  </Button>
+</HStack>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
