@@ -2,12 +2,15 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "@/index.css";
 import App from "@/App.jsx";
-import { Provider } from "@/components/ui/provider";
-
+import { ChakraProviders } from "@/components/ui/provider";
+import { Provider } from "react-redux";
+import { store } from "@/store/store";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Provider>
-      <App />
-    </Provider>
+    <ChakraProviders>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </ChakraProviders>
   </StrictMode>
 );
