@@ -12,14 +12,14 @@ function App() {
         <a href="https://vite.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <Box bg="primary" p={4} color="red">
+        <Box  color="red">
       <Text fontFamily="body">This is a custom theme component!</Text>
     </Box>
 
      <HStack>
-
-<Button color="primary">Click me</Button>
-<Button>Click me  </Button>
+     <Button >base</Button>
+<Button  visual='solid' >solid</Button>
+<Button  visual='outline'>outline</Button>
 </HStack>
       </div>
       <h1>Vite + React</h1>
